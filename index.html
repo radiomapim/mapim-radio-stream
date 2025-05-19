@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MAPIM Web Rádio - Player Auto</title>
+    <script>
+        window.onload = function() {
+            // Inicia o stream automaticamente
+            const audio = new Audio('https://stream.zeno.fm/7wbprc3ce4qvv');
+            audio.play().catch(e => alert("Clique em 'Allow' para liberar o áudio!")); 
+            
+            // Opcional: Mostra a logo
+            document.body.innerHTML += `
+                <img src="https://LINK-DA-SUA-IMAGEM.png" style="width:200px; display:block; margin:20px auto;">
+                <p style="text-align:center">🎶 Tocando: MAPIM Web Rádio AO VIVO!</p>
+            `;
+        };
+    </script>
+    <style>
+        body { font-family: Arial; background: #f0f0f0; text-align: center; padding: 50px; }
+    </style>
+</head>
+<body>
+    <!-- O player é invisível, mas funciona! -->
+</body>
+</html>
